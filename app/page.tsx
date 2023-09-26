@@ -1,11 +1,9 @@
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import { Navigation } from "@shared_ui/navigation/Navigation";
+
 export default function Home() {
-  AOS.init({
-    once: true,
-  });
   return (
-    <></>
-  )
+    <>
+      <Navigation />
+    </>
+  );
 }

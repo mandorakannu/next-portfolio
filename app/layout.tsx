@@ -2,6 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Source_Sans_3 } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { PropsWithChildren } from "react";
 
 const font = Source_Sans_3({ subsets: ["latin"] });
 
@@ -66,15 +67,11 @@ export const metadata: Metadata = {
     },
   ],
 };
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <>
       <html lang="en">
-        <body className={font.className}>
+        <body className={`${font.className} dark:bg-black text-white`}>
           {children}
           <Analytics />
         </body>
