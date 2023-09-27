@@ -34,7 +34,11 @@ export default function Contact() {
     e.preventDefault();
     setLoading(<Loader borderColor="white" barColor="white" />);
     try {
-      if (!email || !subject || !message) {
+      if (
+        email?.length === 0 ||
+        subject?.length === 0 ||
+        message?.length === 0
+      ) {
         setLoading("SEND MESSAGE"),
           setSendMsg({
             title: "Please fill all the fields",
