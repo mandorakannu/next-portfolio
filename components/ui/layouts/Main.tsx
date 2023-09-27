@@ -12,7 +12,7 @@ function Main() {
         <div className="flex justify-center items-center gap-3 my-5">
           <Link
             href="#about"
-            className="bg-blue-500 hover:bg-blue-600 transition-colors delay-75 px-4 py-2 mx-3 rounded-sm text-white"
+            className="bg-teal-500 hover:bg-teal-600 transition-colors delay-75 px-4 py-2 mx-3 rounded-sm text-white"
           >
             Discover
           </Link>

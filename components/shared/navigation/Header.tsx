@@ -15,9 +15,9 @@ function Header(): JSX.Element {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("header");
-      if(window.scrollY === 0) header?.classList.remove("bg-blue-500", "text-white");
+      if(window.scrollY === 0) header?.classList.remove("bg-gray-500", "text-white");
       else if (window.scrollY > 20) {
-      header?.classList.add("bg-blue-500", "text-white");
+      header?.classList.add("bg-gray-500", "text-white");
       }
     });
   }, []);
@@ -51,6 +51,9 @@ function Header(): JSX.Element {
             </li>
             <li>
               <Link href="#projects">Projects</Link>
+            </li>
+            <li>
+              <Link href="#contact">Contact</Link>
             </li>
           </ul>
           <SocialIcons />

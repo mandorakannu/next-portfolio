@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Kannu Mandora Tech Blogs",
+    "description": "Kannu Mandora Tech Blogs is a complex project and it is based on MERN Stack.",
+    "link": "https://mandorakannu.me/"
+  },
+  {
+    "title": "Shri Ram College",
+    "description": "Shri Ram College is a MERN Stack College project based on Students, teachers and admins.",
+    "link": "https://shriramcollege.cyclic.cloud/"
+  },
+  {
+    "title": "Covid Stats Checker",
+    "description": "Covid Stats Checker is a simple project based on React.Js. It shows the stats of Covid-19 in any country.",
+    "link": "https://covid.mandorakannu.tech/"
+  },
+  {
+    "title": "MK Store",
+    "description": "MK Store is a simple project based on Next.Js. It is a E-Commerce website.",
+    "link": "https://mandorakannu.rocks/"
+  },
+  {
+    "title": "API Ninja Hub",
+    "description": "API Ninja Hub is a simple project based on Next.Js. It is a API website.",
+    "link": "https://api.mandorakannu.tech/"
+  }
+]

@@ -16,13 +16,13 @@ function Hamburger() {
       const header = document.querySelector("#hambar");
       const hamburger = document.querySelectorAll(".hamburger");
       if (window.scrollY === 0) {
-        header?.classList.remove("bg-blue-500", "text-white");
+        header?.classList.remove("bg-gray-500", "text-white");
         hamburger?.forEach((h) => {
           h.classList.add("bg-black");
           h.classList.remove("bg-white");
         });
       } else if (window.scrollY > 20) {
-        header?.classList.add("bg-blue-500", "text-white");
+        header?.classList.add("bg-gray-500", "text-white");
         hamburger?.forEach((h) => {
           h.classList.remove("bg-black"), h.classList.add("bg-white");
         });

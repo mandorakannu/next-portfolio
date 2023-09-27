@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <section
-        className="bg-blue-500 flex flex-col justify-center items-center h-screen px-5 gap-10 text-white"
+        className="bg-teal-500 flex flex-col justify-center items-center h-screen px-5 gap-10 text-white"
         id="about"
         aria-label="About me section"
         role="region"
@@ -31,35 +31,36 @@ function About() {
           experience then don&apos;t hesitate to contact me.
         </p>
       </section>
-      <h3 id="skills" className="text-4xl text-center mt-20">
-        Skills Section
-      </h3>
-      <section className="flex flex-col md:flex-row justify-evenly items-center gap-6 pt-20 px-5">
-        <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
-          <Diamond className="text-5xl text-blue-400" />
-          <span className="text-3xl">Design</span>
-          <p>
-            Successful online projects start with good design. It establishes a
-            solid foundation for future development and allows for long term
-            growth.
-          </p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
-          <Code className="text-5xl text-blue-500" />
-          <span className="text-3xl">Development</span>
-          <p>
-            I can code my own designs or even use the customer&apos;s design as
-            base. My focus is to generate clean code that&apos;s well structured
-            for reliability.
-          </p>
-        </div>
-        <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
-          <Laptop className="text-5xl text-blue-400" />
-          <span className="text-3xl">SEO</span>
-          <p>
-            I can setup your project to use SEO principles which will push your
-            project to the first page on search engines and save you ads money.
-          </p>
+      <section id="skills" className="py-40">
+          <h3 className="text-4xl text-center mb-20">Skills Section</h3>
+        <div className="flex flex-col md:flex-row justify-evenly items-center gap-6 px-5">
+          <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
+            <Diamond className="text-5xl text-teal-400" />
+            <span className="text-3xl">Design</span>
+            <p>
+              Successful online projects start with good design. It establishes
+              a solid foundation for future development and allows for long term
+              growth.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
+            <Code className="text-5xl text-teal-500" />
+            <span className="text-3xl">Development</span>
+            <p>
+              I can code my own designs or even use the customer&apos;s design
+              as base. My focus is to generate clean code that&apos;s well
+              structured for reliability.
+            </p>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
+            <Laptop className="text-5xl text-teal-400" />
+            <span className="text-3xl">SEO</span>
+            <p>
+              I can setup your project to use SEO principles which will push
+              your project to the first page on search engines and save you ads
+              money.
+            </p>
+          </div>
         </div>
       </section>
       <Language />
