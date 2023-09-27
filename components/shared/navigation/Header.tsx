@@ -44,13 +44,13 @@ function Header(): JSX.Element {
               </Link>
             </li>
             <li>
-              <Link href="#About">About</Link>
+              <Link href="#about">About</Link>
             </li>
             <li>
-              <Link href="#Services">Services</Link>
+              <Link href="#skills">Skills</Link>
             </li>
             <li>
-              <Link href="#Projects">Projects</Link>
+              <Link href="#projects">Projects</Link>
             </li>
           </ul>
           <SocialIcons />
