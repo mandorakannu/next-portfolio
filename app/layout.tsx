@@ -71,7 +71,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <>
       <html lang="en">
-        <body className={`${font.className} dark:bg-black text-white`}>
+        <body className={`${font.className} dark:bg-[#24262a] dark:text-white`}>
           {children}
           <Analytics />
         </body>
