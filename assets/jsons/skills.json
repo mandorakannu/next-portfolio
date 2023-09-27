@@ -1,0 +1,84 @@
+{
+  "skills": [
+    {
+      "_id": "1",
+      "name": "HTML",
+      "icon": "HTML"
+    },
+    {
+      "_id": "2",
+      "name": "CSS",
+      "icon": "CSS"
+    },
+    {
+      "_id": "3",
+      "name": "Tailwindcss",
+      "icon": "Tailwindcss"
+    },
+    {
+      "_id": "4",
+      "name": "JavaScript",
+      "icon": "JavaScript"
+    },
+    {
+      "_id": "5",
+      "name": "TypeScript",
+      "icon": "TypeScript"
+    },
+    {
+      "_id": "6",
+      "name": "React",
+      "icon": "React"
+    },
+    {
+      "id": "7",
+      "name": "Nextjs",
+      "icon": "Nextjs"
+    },
+    {
+      "_id": "8",
+      "name": "Nodejs",
+      "icon": "Nodejs"
+    },
+    {
+      "id": "9",
+      "name": "Expressjs",
+      "icon": "Expressjs"
+    },
+    {
+      "id": "10",
+      "name": "MongoDB",
+      "icon": "MongoDB"
+    },
+    {
+      "_id": "11",
+      "name": "Git",
+      "icon": "Git"
+    },
+    {
+      "_id": "12",
+      "name": "GitHub",
+      "icon": "GitHub"
+    },
+    {
+      "_id": "13",
+      "name": "PHP",
+      "icon": "PHP"
+    },
+    {
+      "_id": "14",
+      "name": "MySQL",
+      "icon": "MySQL"
+    },
+    {
+      "_id": "15",
+      "name": "React Native",
+      "icon": "React Native"
+    },
+    {
+      "_id": "16",
+      "name": "Mongoose",
+      "icon": "Mongoose"
+    }
+  ]
+}

@@ -1,18 +1,11 @@
 import React, { memo } from "react";
-import { Outfit } from "next/font/google";
 import Link from "next/link";
 import { BsPersonHeart as Person } from "react-icons/bs";
-const outfit = Outfit({
-  weight: "400",
-  style: "normal",
-  subsets: ["latin-ext", "latin"],
-});
+import About from "./About";
 function Main() {
   return (
     <>
-      <main
-        className={`${outfit.className} flex flex-col items-center justify-center h-[80dvh] px-5`}
-      >
+      <main className="flex flex-col items-center justify-center h-screen px-5 pb-20">
         <h2 className="text-3xl text-center">
           I love to create beautiful and efficient websites
         </h2>
@@ -31,6 +24,7 @@ function Main() {
           </Link>
         </div>
       </main>
+      <About />
     </>
   );
 }
