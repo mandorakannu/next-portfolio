@@ -5,7 +5,7 @@ import logo from "@images/logo.png";
 import { useColors } from "@hooks/useColors";
 export default function Logo() {
   const getColor = useColors();
-  const [color] = useState<string>(getColor || "bg-gradient-to-r from-teal-500 via-green-500 to-blue-500");
+  const [color] = useState<string>(getColor || "bg-gradient-to-r from-primary-500 via-green-500 to-blue-500");
   return (
     <Image
       src={logo}

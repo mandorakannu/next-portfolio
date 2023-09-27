@@ -27,13 +27,13 @@ function Hamburger() {
       const header = document.querySelector("#hambar");
       const hamburger = document.querySelectorAll(".hamburger");
       if (window.scrollY === 0) {
-        header?.classList.remove("bg-gray-500", "text-white");
+        header?.classList.remove("bg-gray-700", "text-white");
         hamburger?.forEach((h) => {
           h.classList.add("bg-black");
           h.classList.remove("bg-white");
         });
       } else if (window.scrollY > 20) {
-        header?.classList.add("bg-gray-500", "text-white");
+        header?.classList.add("bg-gray-700", "text-white");
         hamburger?.forEach((h) => {
           h.classList.remove("bg-black"), h.classList.add("bg-white");
         });
@@ -45,11 +45,11 @@ function Hamburger() {
     <>
       <header
         id="hambar"
-        className="sticky top-0 flex sm:hidden flex-row justify-between items-center px-5 py-3 z-50 transition-colors delay-duration-200 ease-in-out"
+        className="sticky top-0 flex sm:hidden flex-row justify-between items-center px-5 py-3 z-50 transition-colors delay-duration-200 ease-in-out dark:bg-[#24262a] dark:text-white"
       >
         <Link href="/" className="flex justify-center items-center gap-4">
           <Logo />
-          <h1 className={`${outfit.className} cursor-default`}>Kannu</h1>
+          <h1 className="cursor-default">Kannu</h1>
         </Link>
         <div className="space-y-2 sm:hidden rotate-180" onClick={showMenu}>
           <span className="block w-5 h-0.5 bg-black dark:bg-white hamburger"></span>
@@ -62,7 +62,7 @@ function Hamburger() {
         onClose={() => setIsOpen(false)}
       >
         <DrawerOverlay />
-        <DrawerContent className="dark:bg-[#24262a]">
+        <DrawerContent className="dark:bg-[#24262a] dark:text-white">
           <DrawerCloseButton />
           <DrawerHeader>Kannu Mandora</DrawerHeader>
 
@@ -74,7 +74,7 @@ function Hamburger() {
                     <Link
                       download={link === "/resume" ? true : false}
                       href={link === "/resume" ? "/Resume.pdf" : link}
-                      className="active:text-teal-500"
+                      className="active:text-primary-500"
                     >
                       {name.toUpperCase()}
                     </Link>

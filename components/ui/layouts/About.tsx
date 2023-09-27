@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <section
-        className="bg-teal-500 text-white px-5 py-20"
+        className="bg-primary-500 text-white px-5 py-20"
         id="about"
         aria-label="About me section"
         role="region"
@@ -38,7 +38,7 @@ function About() {
         <h3 className="text-4xl text-center mb-20">Skills Section</h3>
         <div className="flex flex-col md:flex-row justify-evenly items-center gap-6 px-5">
           <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
-            <Diamond className="text-5xl text-teal-400" />
+            <Diamond className="text-5xl text-primary-400" />
             <span className="text-3xl">Design</span>
             <p>
               Successful online projects start with good design. It establishes
@@ -47,7 +47,7 @@ function About() {
             </p>
           </div>
           <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
-            <Code className="text-5xl text-teal-500" />
+            <Code className="text-5xl text-primary-500" />
             <span className="text-3xl">Development</span>
             <p>
               I can code my own designs or even use the customer&apos;s design
@@ -56,7 +56,7 @@ function About() {
             </p>
           </div>
           <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">
-            <Laptop className="text-5xl text-teal-400" />
+            <Laptop className="text-5xl text-primary-400" />
             <span className="text-3xl">SEO</span>
             <p>
               I can setup your project to use SEO principles which will push

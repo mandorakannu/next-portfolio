@@ -66,7 +66,7 @@ function Language() {
   return (
     <section
       id="language"
-      className="pointer-events-none select-none bg-teal-500 text-white py-32"
+      className="pointer-events-none select-none bg-primary-500 text-white py-32"
     >
       <h3 className="text-4xl text-center my-6">Languages and Frameworks</h3>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-8 place-items-center gap-6 p-5">

@@ -17,8 +17,8 @@ const ProjectCard = () => {
         id="projects"
       >
         <h2 className="text-5xl">Projects</h2>
-        <hr className="h-1.5 w-8 bg-teal-400 rounded my-8" />
-        <p className="text-center text-xl leading-7 w-full text-gray-600 dark:text-teal-300 px-4">
+        <hr className="h-1.5 w-8 bg-primary-400 rounded my-8" />
+        <p className="text-center text-xl leading-7 w-full text-gray-600 dark:text-primary-300 px-4">
           Here you will find some of the personal and clients projects that I
           created with each project <br /> containing its own case study
         </p>
@@ -30,11 +30,11 @@ const ProjectCard = () => {
         >
           <div className="flex flex-col gap-3">
             <h4 className="text-bold text-xl">{title}</h4>
-            <h5 className="text-lg font-normal text-teal-600 dark:text-teal-300">{description}</h5>
+            <h5 className="text-lg font-normal text-primary-600 dark:text-primary-300">{description}</h5>
           </div>
           <Link
             href={link}
-            className="bg-teal-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-teal-400"
+            className="bg-primary-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-primary-400"
             target="_blank"
           >
             View Project

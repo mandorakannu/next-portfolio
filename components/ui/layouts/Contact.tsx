@@ -89,7 +89,7 @@ export default function Contact() {
           value={sendMsg.value}
         />
       )}
-      <div className="bg-teal-500 text-white" id="contact">
+      <div className="bg-primary-500 text-white" id="contact">
         <section className="py-20">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-center">
@@ -156,7 +156,7 @@ export default function Contact() {
               <button
                 type="submit"
                 role="button"
-                className="flex flex-row justify-center items-center py-3 px-10 w-52 h-14 overflow-hidden uppercase text-white rounded hover:shadow-2xl transition-all delay-100 hover:border-teal-500 border-2 text-center"
+                className="flex flex-row justify-center items-center py-3 px-10 w-52 h-14 overflow-hidden uppercase text-white rounded hover:shadow-2xl transition-all delay-100 hover:border-primary-500 border-2 text-center"
               >
                 {loading}
               </button>
