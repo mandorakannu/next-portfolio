@@ -89,7 +89,7 @@ export default function Contact() {
           value={sendMsg.value}
         />
       )}
-      <div className="bg-teal-500 text-white" id="Contact">
+      <div className="bg-teal-500 text-white" id="contact">
         <section className="py-20">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-bold text-center">
