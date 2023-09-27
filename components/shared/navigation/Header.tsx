@@ -2,7 +2,6 @@
 import Logo from "@shared_ui/Logo";
 import Link from "next/link";
 import React, { memo, useEffect } from "react";
-
 import { Outfit } from "next/font/google";
 import SocialIcons from "@shared_ui/Social-Icons";
 import links from "@jsons/links.json";
@@ -17,9 +16,9 @@ function Header(): JSX.Element {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("header");
       if (window.scrollY === 0)
-        header?.classList.remove("bg-gray-500", "text-white");
+        header?.classList.remove("bg-gray-700", "text-white");
       else if (window.scrollY > 20) {
-        header?.classList.add("bg-gray-500", "text-white");
+        header?.classList.add("bg-gray-700", "text-white");
       }
     });
   }, []);
@@ -43,6 +42,7 @@ function Header(): JSX.Element {
             {links.map(({ name, link }) => (
               <li key={name}>
                 <Link
+                  className="cursor-pointer hover:text-teal-400 transition-colors delay-75 ease-in-out"
                   download={link === "/resume" ? true : false}
                   href={link === "/resume" ? "/Resume.pdf" : link}
                 >
