@@ -22,7 +22,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
-    "react-loader-spinner": "^5.4.5"
+    "react-loader-spinner": "^5.4.5",
+    "sharp": "^0.32.6"
   },
   "devDependencies": {
     "@types/aos": "^3.0.5",

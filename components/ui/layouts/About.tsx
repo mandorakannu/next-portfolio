@@ -7,7 +7,7 @@ function About() {
   return (
     <>
       <section
-        className="bg-primary-500 text-white px-5 py-40 h-screen"
+        className="bg-primary-500 text-white px-5 py-40"
         id="about"
         aria-label="About me section"
         role="region"
