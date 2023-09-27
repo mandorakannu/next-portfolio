@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { PropsWithChildren } from "react";
+import { Providers } from "@ui/providers/ChakraUIProvider";
 
 const font = Outfit({ subsets: ["latin"] });
 
@@ -72,7 +73,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
     <>
       <html lang="en">
         <body className={`${font.className} dark:bg-[#24262a] dark:text-white`}>
-          {children}
+          <Providers>{children}</Providers>
           <Analytics />
         </body>
       </html>
