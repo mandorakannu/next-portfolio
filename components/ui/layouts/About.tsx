@@ -7,13 +7,13 @@ function About() {
   return (
     <>
       <section
-        className="bg-primary-500 text-white px-5 py-20"
+        className="bg-primary-500 text-white px-5 py-40 h-screen"
         id="about"
         aria-label="About me section"
         role="region"
       >
-        <div className="flex flex-col justify-center items-center h-screen gap-10">
-          <h3 className="text-4xl text-center">Hi! I&apos;m Kannu Mandora</h3>
+        <h3 className="text-4xl text-center">Hi! I&apos;m Kannu Mandora</h3>
+        <div className="flex flex-col justify-center items-center gap-10 mt-20">
           <p className="w-4/5 mx-auto text-lg">
             I&apos;m a Full Stack [MERN STACK] Web Developer building the
             Front-end of Websites and Web Applications that leads to the success
