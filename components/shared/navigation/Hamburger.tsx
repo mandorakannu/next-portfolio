@@ -4,6 +4,7 @@ import SocialIcons from "@shared_ui/Social-Icons";
 import Link from "next/link";
 import React, { memo, useEffect, useState } from "react";
 import { Outfit } from "next/font/google";
+import links from "@jsons/links.json";
 import {
   Drawer,
   DrawerBody,
@@ -40,15 +41,6 @@ function Hamburger() {
     });
   }, []);
   const showMenu = () => setIsOpen(!isOpen);
-  const links = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/#about" },
-    { name: "Skills", link: "/#skills" },
-    { name: "Projects", link: "/#projects" },
-    { name: "Contact", link: "/#contact" },
-    { name: "My Blogs", link: "https://www.mandorakannu.me" },
-    { name: "Resume", link: "/resume" },
-  ];
   return (
     <>
       <header
@@ -68,7 +60,6 @@ function Hamburger() {
         isOpen={isOpen}
         placement="right"
         onClose={() => setIsOpen(false)}
-        
       >
         <DrawerOverlay />
         <DrawerContent className="dark:bg-[#24262a]">
@@ -80,7 +71,11 @@ function Hamburger() {
               {links.map(({ name, link }, index) => (
                 <React.Fragment key={index}>
                   <li className="my-6" onClick={() => setIsOpen(!isOpen)}>
-                    <Link href={link} className="active:text-teal-500">
+                    <Link
+                      download={link === "/resume" ? true : false}
+                      href={link === "/resume" ? "/Resume.pdf" : link}
+                      className="active:text-teal-500"
+                    >
                       {name.toUpperCase()}
                     </Link>
                   </li>

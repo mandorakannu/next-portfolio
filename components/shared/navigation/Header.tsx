@@ -5,6 +5,7 @@ import React, { memo, useEffect } from "react";
 
 import { Outfit } from "next/font/google";
 import SocialIcons from "@shared_ui/Social-Icons";
+import links from "@jsons/links.json";
 const outfit = Outfit({
   weight: "400",
   style: "normal",
@@ -15,9 +16,10 @@ function Header(): JSX.Element {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("header");
-      if(window.scrollY === 0) header?.classList.remove("bg-gray-500", "text-white");
+      if (window.scrollY === 0)
+        header?.classList.remove("bg-gray-500", "text-white");
       else if (window.scrollY > 20) {
-      header?.classList.add("bg-gray-500", "text-white");
+        header?.classList.add("bg-gray-500", "text-white");
       }
     });
   }, []);
@@ -38,23 +40,16 @@ function Header(): JSX.Element {
           <ul
             className={`${outfit.className} hidden sm:flex flex-row justify-center items-center gap-5`}
           >
-            <li>
-              <Link href="/" onClick={scrollToTop}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="#about">About</Link>
-            </li>
-            <li>
-              <Link href="#skills">Skills</Link>
-            </li>
-            <li>
-              <Link href="#projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="#contact">Contact</Link>
-            </li>
+            {links.map(({ name, link }) => (
+              <li key={name}>
+                <Link
+                  download={link === "/resume" ? true : false}
+                  href={link === "/resume" ? "/Resume.pdf" : link}
+                >
+                  {name}
+                </Link>
+              </li>
+            ))}
           </ul>
           <SocialIcons />
         </nav>
