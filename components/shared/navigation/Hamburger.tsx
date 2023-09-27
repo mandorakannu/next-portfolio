@@ -2,8 +2,17 @@
 import Logo from "@shared_ui/Logo";
 import SocialIcons from "@shared_ui/Social-Icons";
 import Link from "next/link";
-import React, { memo, useEffect } from "react";
+import React, { memo, useEffect, useState } from "react";
 import { Outfit } from "next/font/google";
+import {
+  Drawer,
+  DrawerBody,
+  DrawerFooter,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerCloseButton,
+} from "@chakra-ui/react";
 const outfit = Outfit({
   weight: "400",
   style: "normal",
@@ -11,6 +20,7 @@ const outfit = Outfit({
 });
 
 function Hamburger() {
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const header = document.querySelector("#hambar");
@@ -29,38 +39,62 @@ function Hamburger() {
       }
     });
   }, []);
+  const showMenu = () => setIsOpen(!isOpen);
+  const links = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/#about" },
+    { name: "Skills", link: "/#skills" },
+    { name: "Projects", link: "/#projects" },
+    { name: "Contact", link: "/#contact" },
+    { name: "My Blogs", link: "https://www.mandorakannu.me" },
+    { name: "Resume", link: "/resume" },
+  ];
   return (
     <>
       <header
         id="hambar"
-        className="sticky top-0 flex sm:hidden flex-row justify-between items-center px-5 py-3 z-50 transition-colors delay-75 ease-in-out"
+        className="sticky top-0 flex sm:hidden flex-row justify-between items-center px-5 py-3 z-50 transition-colors delay-duration-200 ease-in-out"
       >
         <Link href="/" className="flex justify-center items-center gap-4">
           <Logo />
           <h1 className={`${outfit.className} cursor-default`}>Kannu</h1>
         </Link>
-        <div className="space-y-2 sm:hidden rotate-180">
+        <div className="space-y-2 sm:hidden rotate-180" onClick={showMenu}>
           <span className="block w-5 h-0.5 bg-black dark:bg-white hamburger"></span>
           <span className="block w-8 h-0.5 bg-black dark:bg-white hamburger"></span>
         </div>
       </header>
-      <div className="scale-up-ver-top hambar hidden fixed z-50 w-screen">
-        <ul className="space-y-2 grid place-items-center bg-navy-700 font-firaCode py-10 gap-5">
-          <li>
-            <a href="#About" className="active:text-gray-400">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="#Services" className="active:text-gray-400">
-              Services
-            </a>
-          </li>
-          <li>
+      <Drawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={() => setIsOpen(false)}
+        
+      >
+        <DrawerOverlay />
+        <DrawerContent className="dark:bg-[#24262a]">
+          <DrawerCloseButton />
+          <DrawerHeader>Kannu Mandora</DrawerHeader>
+
+          <DrawerBody>
+            <ul className="list-none">
+              {links.map(({ name, link }, index) => (
+                <React.Fragment key={index}>
+                  <li className="my-6" onClick={() => setIsOpen(!isOpen)}>
+                    <Link href={link} className="active:text-teal-500">
+                      {name.toUpperCase()}
+                    </Link>
+                  </li>
+                  <hr />
+                </React.Fragment>
+              ))}
+            </ul>
+          </DrawerBody>
+
+          <DrawerFooter>
             <SocialIcons />
-          </li>
-        </ul>
-      </div>
+          </DrawerFooter>
+        </DrawerContent>
+      </Drawer>
     </>
   );
 }
