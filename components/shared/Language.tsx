@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-import { skills } from "@jsons/skills.json";
+import skills from "@jsons/skills.json";
 import {
   SiHtml5,
   SiCss3,
