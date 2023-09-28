@@ -34,7 +34,7 @@ function About() {
           </p>
         </div>
       </section>
-      <section id="skills" className="py-40">
+      <section id="skills" className="py-40 dark:bg-main dark:text-white">
         <h3 className="text-4xl text-center mb-20">Skills Section</h3>
         <div className="flex flex-col md:flex-row justify-evenly items-center gap-6 px-5">
           <div className="flex flex-col justify-center items-center gap-5 border-2 border-gray-300 m-4 p-6">

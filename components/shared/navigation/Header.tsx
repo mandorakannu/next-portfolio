@@ -26,7 +26,7 @@ function Header(): JSX.Element {
 
   return (
     <>
-      <header className="hidden sm:block sticky top-0 z-50 px-5 py-2 transition-colors delay-75 ease-in-out">
+      <header className="hidden sm:block sticky top-0 z-50 px-5 py-2 transition-colors delay-75 ease-in-out dark:bg-main dark:text-white">
         <nav className="flex flex-row justify-around">
           <div className="hidden sm:flex flex-row justify-center items-center gap-4">
             <Link href="/" scroll={true} onClick={scrollToTop}>

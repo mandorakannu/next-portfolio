@@ -1,11 +1,4 @@
 import React from "react";
-import Image from "next/image";
-import laptop from "@images/laptop.png";
-import api from "@images/api.png";
-import blogs from "@images/blogs.png";
-import college from "@images/college.png";
-import covid from "@images/covid.png";
-import store from "@images/mk_store.png";
 import projects from "@jsons/projects.json";
 import Link from "next/link";
 
@@ -13,7 +6,7 @@ const ProjectCard = () => {
   return (
     <>
       <div
-        className="flex flex-col justify-center items-center py-20"
+        className="flex flex-col justify-center items-center py-20 dark:bg-main dark:text-white"
         id="projects"
       >
         <h2 className="text-5xl">Projects</h2>
@@ -26,10 +19,10 @@ const ProjectCard = () => {
       {projects.map(({ title, description, link }) => (
         <div
           key={title}
-          className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10"
+          className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10 dark:bg-main"
         >
           <div className="flex flex-col gap-3">
-            <h4 className="text-bold text-xl">{title}</h4>
+            <h4 className="text-bold text-xl dark:text-white">{title}</h4>
             <h5 className="text-lg font-normal text-primary-600 dark:text-primary-300">{description}</h5>
           </div>
           <Link
