@@ -20,6 +20,11 @@
     "link": "https://mandorakannu.rocks/"
   },
   {
+    "title": "Threads Web App",
+    "description": "Threads Web App is a simple project based on Next.Js. It is a Social media app. It is a clone of Threads launch by Instagram.",
+    "link": "https://threads.mandorakannu.tech/"
+  },
+  {
     "title": "API Ninja Hub",
     "description": "API Ninja Hub is a simple project based on Next.Js. It is a API website.",
     "link": "https://api.mandorakannu.tech/"
