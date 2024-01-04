@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteId: "@mandorakannu",
     creator: "@KannuMandora",
     creatorId: "1467726470533754880",
-    images: ["https://mandorakannu.tech/images/main.webp"],
+    images: ["https://mandorakannu.me/images/main.webp"],
   },
   verification: {
     google: "_RMbn1Udckop0qHdoAu_PoiGFWqwB19CecNEqZfHxAE",
