@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://mandorakannu.rocks/sitemap.xml',
+    sitemap: 'https://mandorakannu.xyz/sitemap.xml',
   }
 }
