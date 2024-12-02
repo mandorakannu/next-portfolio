@@ -11,22 +11,36 @@ const font = Outfit({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kannu Mandora | Full Stack Developer",
   description:
-    "Hi, it's me Kannu Mandora. I want to be a Full Stack Developer. I am currently focused on my skills in React, Node, and Express.",
+    "Discover Mandorakannu's portfolio showcasing expertise in web development, innovative projects, and creative solutions. Explore achievements and skills.",
   keywords: [
-    "Kannu",
+    "journal",
+    "blog",
+    "technology",
+    "lifestyle",
+    "personal growth",
     "Kannu Mandora",
-    "Mandora",
-    "Web Developer",
-    "Full Stack",
-    "MERN Stack",
-    "Stack",
-    "Full Stack Developer",
-    "Mandora Kannu",
-    "tech blogger",
+    "content",
+    "articles",
+    "news",
+    "web dev",
+    "MERN stack",
+    "React",
+    "Node.js",
+    "frontend",
+    "backend",
+    "full-stack",
+    "coding",
+    "JavaScript",
+    "MongoDB",
+    "Express",
+    "tutorials",
+    "projects",
     "developer",
-    "web development",
-    "software engineering",
-    "programming languages",
+    "upskilling",
+    "tech",
+    "programming",
+    "career tips",
+    "blogging",
   ],
   authors: [{ name: "Kannu Mandora" }],
   robots: {
@@ -42,23 +56,39 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  twitter: {
-    card: "summary_large_image",
+  openGraph: {
+    type: "website",
+    url: "https:/mandorakannu.xyz",
     title: "Kannu Mandora | Full Stack Developer",
     description:
-      "Hi, it's me Kannu Mandora. I want to be a Full Stack Developer. I am currently focused on my skills in React, Node, and Express. I am also learning about MySQL and MongoDB. I am also a computer student at the College of SETH G.L. BIHANI S.D. P.G. COLLEGE at Sriganganagar.",
-    siteId: "@mandorakannu",
-    creator: "@KannuMandora",
-    creatorId: "1467726470533754880",
-    images: ["https://mandorakannu.xyz/images/main.webp"],
+      "Discover Mandorakannu's portfolio showcasing expertise in web development, innovative projects, and creative solutions. Explore achievements and skills.",
+    images: [
+      {
+        url: "https:/mandorakannu.xyz/images/author.jpg",
+        width: 800,
+        height: 600,
+        alt: "Kannu Mandora | Full Stack Developer",
+      },
+    ],
+    siteName: "Kannu Mandora | Full Stack Developer",
+    countryName: "India",
+    locale: "en_IN",
+  },
+  twitter: {
+    creatorId: "@mandorakannu",
+    card: "summary_large_image",
+    title: "Kannu Mandora | Full Stack Developer",
+    creator: "Kannu Mandora",
+    description:
+      "Discover Mandorakannu's portfolio showcasing expertise in web development, innovative projects, and creative solutions. Explore achievements and skills.",
+    images: {
+      url: "https:/mandorakannu.xyz/images/author.jpg",
+      alt: "Kannu Mandora | Full Stack Developer",
+    },
   },
   verification: {
-    google: "_RMbn1Udckop0qHdoAu_PoiGFWqwB19CecNEqZfHxAE",
-    yandex: "yandex",
-    yahoo: "yahoo",
-    other: {
-      me: ["mandorakannu@gmail.com"],
-    },
+    google: "RMbn1Udckop0qHdoAu_PoiGFWqwB19CecNEqZfHxAE",
+    yahoo: "74bbe6e379214911a1f7682e4d6e244e",
   },
   icons: [
     {
@@ -68,7 +98,13 @@ export const metadata: Metadata = {
       url: "/favicon.ico",
     },
   ],
+  metadataBase: new URL(`https:/mandorakannu.xyz`),
+  alternates: {
+    canonical: "./",
+  },
 };
+
+
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <>

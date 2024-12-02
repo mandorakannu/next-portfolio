@@ -71,11 +71,7 @@ function Hamburger() {
               {links.map(({ name, link }, index) => (
                 <React.Fragment key={index}>
                   <li className="my-6" onClick={() => setIsOpen(!isOpen)}>
-                    <Link
-                      download={link === "/resume" ? true : false}
-                      href={link === "/resume" ? "/Resume.pdf" : link}
-                      className="active:text-primary-500"
-                    >
+                    <Link href={link} className="active:text-primary-500">
                       {name.toUpperCase()}
                     </Link>
                   </li>

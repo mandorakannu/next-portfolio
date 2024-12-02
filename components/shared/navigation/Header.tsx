@@ -50,9 +50,8 @@ function Header(): JSX.Element {
             {links.map(({ name, link }) => (
               <li key={name}>
                 <Link
+                  href={link}
                   className="cursor-pointer hover:text-primary-400 transition-colors delay-75 ease-in-out"
-                  download={link === "/resume" ? true : false}
-                  href={link === "/resume" ? "/Resume.pdf" : link}
                 >
                   {name}
                 </Link>

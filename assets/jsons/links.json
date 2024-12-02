@@ -4,6 +4,5 @@
   { "name": "Skills", "link": "/#skills" },
   { "name": "Projects", "link": "/#projects" },
   { "name": "Contact", "link": "/#contact" },
-  { "name": "My Blogs", "link": "https://blog.mandorakannu.xyz/" },
-  { "name": "Resume", "link": "/resume" }
+  { "name": "My Blogs", "link": "https://blog.mandorakannu.xyz/" }
 ]
