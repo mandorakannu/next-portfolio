@@ -16,24 +16,42 @@ const ProjectCard = () => {
           created with each project <br /> containing its own case study
         </p>
       </div>
-      {projects.map(({ title, description, link }) => (
-        <div
-          key={title}
-          className="flex max-sm:flex-col max-sm:text-center justify-between items-center gap-10 px-20 py-10 dark:bg-main"
-        >
-          <div className="flex flex-col gap-3">
-            <h4 className="text-bold text-xl dark:text-white">{title}</h4>
-            <h5 className="text-lg font-normal text-primary-600 dark:text-primary-300">{description}</h5>
-          </div>
-          <Link
-            href={link}
-            className="bg-primary-400 px-10 py-3 uppercase border text-white tracking-widest hover:shadow-2xl transition-all delay-100 hover:border-primary-400"
-            target="_blank"
+
+      <section className="flex flex-row flex-wrap justify-around items-center gap-10 px-20 pt-10 pb-20 dark:bg-main">
+        {projects.map(({ title, description, link, github }) => (
+          <div
+            key={title}
+            className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200"
           >
-            View Project
-          </Link>
-        </div>
-      ))}
+            <div className="px-6 py-4">
+              <h2 className="text-xl font-bold text-gray-800">{title}</h2>
+              <p className="mt-2 text-gray-600">{description}</p>
+            </div>
+            <div className="px-6 py-4 flex items-center justify-between">
+              {link && (
+                <Link
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 hover:text-blue-700 font-semibold"
+                >
+                  Live Demo
+                </Link>
+              )}
+              {github && (
+                <a
+                  href={github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-gray-900 font-semibold"
+                >
+                  GitHub Repo
+                </a>
+              )}
+            </div>
+          </div>
+        ))}
+      </section>
     </>
   );
 };

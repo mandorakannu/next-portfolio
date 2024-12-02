@@ -1,32 +1,38 @@
 [
   {
     "title": "Kannu Mandora Tech Blogs",
-    "description": "Kannu Mandora Tech Blogs is a complex project and it is based on MERN Stack.",
-    "link": "https://blog.mandorakannu.xyz/"
+    "description": "A feature-rich blog application built using the MERN stack, showcasing technical content and modern web development practices.",
+    "link": "https://blog.mandorakannu.xyz/",
+    "github": "https://github.com/mandorakannu/next-blogs"
   },
   {
     "title": "Shri Ram College",
-    "description": "Shri Ram College is a MERN Stack College project based on Students, teachers and admins.",
-    "link": "https://college.mandorakannu.xyz/"
+    "description": "An advanced college management system using the MERN stack, designed to streamline operations for students, teachers, and administrators.",
+    "link": "https://college.mandorakannu.xyz/",
+    "github": "https://github.com/mandorakannu/shri-ram-client"
   },
   {
     "title": "Covid Stats Checker",
-    "description": "Covid Stats Checker is a simple project based on React.Js. It shows the stats of Covid-19 in any country.",
-    "link": "https://covid.mandorakannu.xyz/"
+    "description": "A React-based web app that provides real-time COVID-19 statistics for any country, presented in a user-friendly interface.",
+    "link": "https://covid.mandorakannu.xyz/",
+    "github": "https://github.com/mandorakannu/covid-19"
   },
   {
     "title": "MK Store",
-    "description": "MK Store is a simple project based on Next.Js. It is a E-Commerce website.",
-    "link": "https://store.mandorakannu.xyz/"
+    "description": "A sleek e-commerce platform built with Next.js, offering a seamless shopping experience for users with modern features.",
+    "link": "https://store.mandorakannu.xyz/",
+    "github": "https://github.com/mandorakannu/e-commerce"
   },
   {
     "title": "Threads Web App",
-    "description": "Threads Web App is a simple project based on Next.Js. It is a Social media app. It is a clone of Threads launch by Instagram.",
-    "link": "https://threads.mandorakannu.xyz/"
+    "description": "A social media application inspired by Instagram's Threads, built using Next.js with a focus on real-time interactions and a user-friendly design.",
+    "link": "https://threads.mandorakannu.xyz/",
+    "github": "https://github.com/mandorakannu/threads"
   },
   {
     "title": "API Ninja Hub",
-    "description": "API Ninja Hub is a simple project based on Next.Js. It is a API website.",
-    "link": "https://api.mandorakannu.xyz/"
+    "description": "A centralized platform created with Next.js for accessing and showcasing APIs, making it a hub for developers and integrations.",
+    "link": "https://api.mandorakannu.xyz/",
+    "github": "https://github.com/mandorakannu/api-ninja-hub-next"
   }
 ]
