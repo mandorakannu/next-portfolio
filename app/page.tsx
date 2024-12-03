@@ -12,7 +12,7 @@ export default function Home() {
       <ProjectCard /> {/* This is the project card component */}
       {/* This is the project card component */}
       <Contact /> {/* This is the contact component */}
-      <ScrollToTop /> This is the scroll to top component
+       <ScrollToTop />{/* This is the scroll to top component */}
     </>
   );
 }
